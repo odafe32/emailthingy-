@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Second ticketter</title>
+    <!-- -------favicon------- -->
+    <link rel="shortcut icon" href="./-/image/logo1.png" type="image/x-icon">
+    <!-- --------------fonts----------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
+    <!-- -----------------fonts end----------------- -->
+    <!-- -------------style-------------- -->
+    <style>
+        body, html {
+            font-family: 'Nunito Sans', sans-serif;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin-top: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .container .container_second {
+            width: 100%;
+            max-width: 612px;
+           
+        }
+
+    
+        .icon{
+            background-color: #F9FAFB;
+            border-bottom: 2px solid #eaeef2d9;
+        }
+        .icon img {
+            width: 90px;
+            height: 29px;
+            padding-top: 15px;
+            padding-left: 28px;
+            padding-bottom: 15px;
+           
+        }
+        .price{
+            padding-top: 7px;
+        }
+        .content,
+        .content2,
+        .content3 {
+            padding: 28px;
+            background-color: #F9FAFB;
+            border-bottom: 2px solid #eaeef2c6;
+        }
+        .content p{
+            color: #616A71;
+        }
+        .content h2
+        .content h3{
+            color: #1F2328;
+        }
+        .content img,
+        .second
+        {
+            width: 18px;
+            height: 14px;
+        }
+        .content span{
+            color: #57606A;
+        }
+        /* ------------------- */
+        .content2 .tick2{
+            display: flex;
+            padding-bottom: 30px;
+           
+        }
+        .content2 img{
+        
+            display: inline-block;
+            
+        }
+        .content2 .span{
+            padding-left: 10px;
+            font-size: 24px;
+            font-weight: 600;
+          
+        }
+        .content2_content{
+            display: inline-block;
+            
+        }
+        .content2_content span{
+            padding-left: 10px;
+            vertical-align: top;
+            color: #57606A;
+        }
+        .content2_content img{
+            width: 18px;
+        }
+.purchasednote{
+    padding-top: 20px;
+    color: #616A71;
+}
+
+/* ---------------buttton------------- */
+
+button:nth-child(1){
+    background-color: #ffffff;
+  
+    border: 1px solid #EAEEF2;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:nth-child(2){
+    background-color: #000000;
+    cursor: pointer;
+    border: 1px solid #EAEEF2;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 10px;
+}
+
+
+/* ------------conntent3----------------- */
+.content3{
+width: auto;
+text-align: center;
+}
+.content3 img{
+display: block;
+width: 100%;
+margin: 0 auto;
+}
+        footer {
+          
+            background-color: #EAEEF2;
+            border-top: 6px dashed #F9FAFB;
+        }
+
+        footer .center {
+            text-align: center;
+            font-weight: 600;
+            color: #24292F;
+            padding-top: 15px;
+        }
+
+        footer .media_icon {
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 30px;
+            gap: 20px; */
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 30px;
+        }
+        footer .media_icon a {
+          display: inline-block;
+          margin: 0 10px;
+        }
+
+        footer .info {
+            text-align: center;
+            color: #5d6671;
+            font-size: 16px;
+            padding-top: 20px;
+        }
+        footer .quick_links,
+        footer .footer_image{
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .quick_links a {
+            color:#57606A;
+            margin:  0 10px;
+            display: inline-block;
+        }
+
+
+      .footer_image{
+        text-align: center;
+      }
+      .footer_image img,
+      .footer_image span{
+        display: inline-block;
+        vertical-align: middle;
+       
+      }
+      .footer_image span{
+        color: #57606A;
+        font-style: italic;
+        padding: 0px 7px;
+      }
+        .footer_image img {
+      
+         
+   
+            margin: auto 0;
+            text-align: center;
+         
+        }
+        .footer_image .img1{
+            width: 73.32px;
+        }
+        .footer_image .img2{
+            width: 107.05px;
+        }
+        @media only screen and (max-width: 768px) {
+            .container .container_second {
+                width: 100%;
+            }
+
+            .tick2 img{
+        
+        width: 30px;
+            }
+         
+        }
+        @media only screen and (max-width: 400px) {
+            .tick2 img{ width: 33px;  height: 30px;}
+         .tick2 span{
+            font-size: 20px;
+         }
+        }
+    </style>
+    <!-- -----------------------end style----------- -->
+</head>
+<body>
+    <div class="container">
+        <div class="container_second">
+            <div class="logo_top">
+                <!-- ------image------ -->
+                <img src="./Assets/Rectangle 12155.png" width="100%" alt="logo">
+            </div>
+            <!-- ------------image end----------- -->
+            <!-- ---------icon------------ -->
+            <div class="icon">
+                <img src="./Assets/ticketter1.png" alt="icon">
+            </div>
+            <!-- ------------icon----------- -->
+            <!-- --------------content------------ -->
+            <div class="content">
+               <!-- ---------ticket purcahes-------- -->
+                <div class="ticket_purchased">
+                    <h2>Ticket Purchase completed!</h2>
+                    <p>Hello creator,  you ordered for this assets and here is the details of your purchase</p>
+                    <h3>ORDER ID: 10HGT50</h3>
+                    <!-- ------------icon image----- -->
+                    <img src="./Assets/Icon.png" class="image_icon" alt="icon"> 
+                    <span>1 X Ballers Ticket</span>
+                    <!-- --------------price--------------- -->
+             <div class="price">
+                    <img src="./Assets/money.png" class="image_icon" alt="icon"> 
+                    <span>N2000</span>
+                </div>
+                </div>
+               <!-- -------end ticket------------- -->
+            </div>
+            <!-- --------------------end content---------/ -->
+
+            <!-- .---------content2-------- -->
+            <div class="content2">
+            <div class="tick2">
+             <img src="./Assets/Ellipse 2.png" alt="icon">   <span class="span">Untitled Design Conference, 2024</span>
+             </div>
+             <div class="content2_content">
+               <p><img src="./Assets/calender.svg" alt="calender"><span>Tue, May 20 - Wed, May 22</span></p> 
+               <p><img src="./Assets/clock.svg" alt="clock"><span>10:00 AM - 3:00 PM WAT each day</span></p> 
+               <p><img src="./Assets/landmark.svg" alt="calender"><span>Landmark Events Center, Lagos Island</span></p> 
+               <p class="purchasednote">This ticket was purchased on 23 March, 2023 at 17:35 WAT,<br> connected with Metamask and wallet 0xf7......3802.<div style="color: red; margin-top: -16px;">See transaction</div></p>
+               <div class="button">
+                <button>View Receipts</button>
+                <button>Download Tickets</button>
+               </div>
+             </div>
+            
+            </div>
+
+            <!-- --------------content 3------------------------ -->
+            <div class="content3">
+                <img src="./Assets/check.png" alt="">
+            </div>
+            <!-- -------------------------------------------------- -->
+            <!-- ---------------end------------ -->
+            <!-- -----------------------footer------------------ -->
+            <footer>
+               <!-- ----------------------------------- -->
+               <div class="footer_image">
+                <img src="./Assets/ticketter1.png" class="img1" alt="footer image"> <span>from</span> <img src="./Assets/logo1.png" class="img2" alt="footer image">
+          
+                    </div>
+        
+                     <!-- ------------quick links------------ -->
+                     <div class="quick_links">
+                     <a href="#"><li>Unsubscribe</li></a>
+                    <a href="#"><li>Terms of use</li></a>
+                     <a href="#"><li>Help center</li></a>
+                         </div>
+             <p class="info">Blocasset Inc., 651 N Broad St. 206, Middletown, DE 19709</p>
+          <!-- ------------content------------ -->
+          <p class="center">Connect with us</p>
+      
+                <!-- ---------------media icons------------ -->
+                <div class="media_icon">
+                    <a href=""><img src="./Assets/twitter.png" alt="twitter"></a>
+                    <a href=""><img src="./Assets/linkedin.png" alt="linkedin"></a>
+                    <a href=""><img src="./Assets/insta.png" alt="instagram"></a>
+                      </div>
+
+
+       
+                        </footer>
+                         <!-- ------------end footer---- -->
+                                               <!-- -----------end footer image----- -->
+        <img src="./Assets/footer end.png" alt="footer end image" width="100%">
+                                </div>
+                            </div>
+                        </body>
+                        </html>
+                      
